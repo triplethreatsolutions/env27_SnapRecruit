@@ -13,6 +13,8 @@ HISTO_DEBUG = False
 src_path = 'images\\phoneimg_cropped.png'
 #src_path = 'images\\phoneimg_table.png'
 
+store_path = 'static\\images\\*.png'
+
 
 def get_image_file(img_file):
 
@@ -24,6 +26,20 @@ def get_image_file(img_file):
         print(' Unable to open image: ', img_file)
 
     return pil_object
+
+
+def remove_old_image_files(purge=True):
+
+    # Find and remove any current images in folder
+    img_files = glob.glob(store_path)
+    # print (img_files)
+    if img_files and purge:
+        print ("Removing old crops before creating new...")
+        for im in img_files:
+            os.remove(im)
+    else:
+        if purge:
+            print('Image folder was found empty...')
 
 
 def invert_image_pixels(img_array, max_bin):
@@ -53,7 +69,65 @@ def calculate_histogram(img_file):
 
     return invert_image_pixels(img_file, np.nanargmax(hist1))
 
+
+def find_horizontal_lines(img_array):
+
+    maxy, maxx = img_array.shape
+    horProj = cv2.reduce(img_array, 1, cv2.REDUCE_AVG)
+    isSpace = False
+    count = None
+    yMean = None
+    yCoords = list()
+    for index in np.ndindex(horProj.shape):
+        y, x = index
+        # print(index, horProj[(y, x)])
+        if isSpace == False:
+            if horProj[(y, x)] == 0:
+                isSpace = True
+                count = 1
+                yMean = y
+        else:
+            if horProj[(y, x)] != 0 or y == (maxy - 1):
+                isSpace = False
+                # print(yMean / count)
+                yCoords.append((yMean / count) - 2)
+            else:
+                yMean += y
+                count = count + 1
+
+    return yCoords
+
+
+def find_vertical_lines(img_array):
+
+    maxy, maxx = img_array.shape
+    isSpace = False
+    count = None
+    xMean = None
+    xCoords = list()
+    vertProj = cv2.reduce(img_array, 0, cv2.REDUCE_AVG)
+    for index in np.ndindex(vertProj.shape):
+        y, x = index
+        # print(index, vertProj[(y, x)])
+        if isSpace == False:
+            if vertProj[(y, x)] == 0 and vertProj[(y, x - 2)] == 0 and vertProj[(y, x + 2)] == 0:
+                isSpace = True
+                count = 1
+                xMean = x
+        else:
+            if vertProj[(y, x)] != 0:
+                isSpace = False
+                # print(xMean / count)
+                xCoords.append(xMean / count)
+            else:
+                xMean += x
+                count = count + 1
+
+    return xCoords
+
 if __name__ == '__main__':
+
+    remove_old_image_files(False)
 
     pil_image = get_image_file(src_path)
 
@@ -85,89 +159,40 @@ if __name__ == '__main__':
     img_threshold = cv2.adaptiveThreshold(img_invert, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
     #cv2.imshow('CV2 Threshold', img_threshold)
 
-    new_img = calculate_histogram(img_invert)
+    final_img = calculate_histogram(img_invert)
 
     if HISTO_DEBUG:
-        hist2 = cv2.calcHist([new_img], [0], None, [256], [0, 256])
+        hist2 = cv2.calcHist([final_img], [0], None, [256], [0, 256])
         plt.plot(hist1)
         plt.show()
         plt.plot(hist2)
         plt.show()
     else:
-        print('Finding horizontal line segments...')
-        maxy, maxx = new_img.shape
-        horProj = cv2.reduce(new_img, 1, cv2.REDUCE_AVG)
-        isSpace = False
-        count = None
-        yMean = None
-        yCoords = list()
-        for index in np.ndindex(horProj.shape):
-            y, x = index
-            #print(index, horProj[(y, x)])
-            if isSpace == False:
-                if horProj[(y, x)] == 0:
-                    isSpace = True
-                    count = 1
-                    yMean = y
-            else:
-                if horProj[(y, x)] != 0 or y == (maxy-1):
-                    isSpace = False
-                    #print(yMean / count)
-                    yCoords.append((yMean / count)-2)
-                else:
-                    yMean += y
-                    count = count + 1
+        print('Find horizontal line segments...')
+        horizontal_segments = find_horizontal_lines(final_img)
 
-        isSpace = False
-        count = None
-        xMean = None
-        xCoords = list()
-        print('Finding vertical line segments...')
-        vertProj = cv2.reduce(new_img, 0, cv2.REDUCE_AVG)
-        for index in np.ndindex(vertProj.shape):
-            y, x = index
-            #print(index, vertProj[(y, x)])
-            if isSpace == False:
-                if vertProj[(y, x)] == 0 and vertProj[(y, x-2)] == 0 and vertProj[(y, x+2)] == 0:
-                    isSpace = True
-                    count = 1
-                    xMean = x
-            else:
-                if vertProj[(y, x)] != 0:
-                    isSpace = False
-                    #print(xMean / count)
-                    xCoords.append(xMean / count)
-                else:
-                    xMean += x
-                    count = count + 1
+        print('Find vertical line segments...')
+        vertical_segments = find_vertical_lines(final_img)
 
-        maxy, maxx = new_img.shape
-        #print(maxy, maxx, depth)
+        # What are the dimensions of the image
+        maxy, maxx = final_img.shape
+        print("Final Image = ", maxy, maxx)
 
         previousYpt = 0
         cropped_images = list()
-        print('Cropping images... ')
-        for ypt in yCoords:
+        print('Cropping images by row... ')
+        for ypt in horizontal_segments:
             # its img[y: y + h, x: x + w], upper left and lower right X,Y coords
-            cropped_images.append(new_img[previousYpt:ypt, 0:maxx])
+            cropped_images.append(img_denoise[previousYpt:ypt, 0:maxx])
+            # draw the horizontal lines on the image
             #cv2.line(img_final, (0, ypt), (maxx, ypt), (0, 0, 255))
             previousYpt = ypt
-
-        # Find and remove any current images in folder
-        img_files = glob.glob('static\\images\*.png')
-        # print (img_files)
-        if img_files:
-            print ("Removing old crops before creating new...")
-            for im in img_files:
-                os.remove(im)
-        else:
-            print('Image folder was found empty...')
 
         i = 10  # default starting pic count, makes for easy sorting
         for im in cropped_images:
             #img_final = cv2.cvtColor(im, cv2.COLOR_GRAY2BGR)
-            print('img_final = ', type(im), im.shape, im.dtype)
-            for xpt in xCoords:
+            #print('img_final = ', type(im), im.shape, im.dtype)
+            for xpt in vertical_segments:
                 cv2.line(im, (xpt, 0), (xpt, maxy), (0, 255, 0))
                 #cv2.putText(img_final, str(xpt), (xpt, 30), cv2.FONT_HERSHEY_SIMPLEX, .2, (0, 255, 0))
             print ('Saving cropped image...')
@@ -175,13 +200,7 @@ if __name__ == '__main__':
             cv2.imwrite('static\\images\\' + str(dt.date.today()) + str(i) + '.png', im)
             i = i + 1
 
-        xCoords = list()
-        yCoords = list()
-        img_files = list()
         print('Image processing completed!')
-
-        #print('horProj = ', type(horProj), horProj.shape, horProj.dtype)
-        #print('vertProj = ', type(vertProj), vertProj.shape, vertProj.dtype)
 
         #cv2.imshow('CV2 Grey', img_grey)
         #cv2.imshow('CV2 Denoise', img_denoise)
