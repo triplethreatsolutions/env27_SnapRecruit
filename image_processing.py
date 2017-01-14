@@ -13,7 +13,7 @@ src_path = 'images\\usjn_mod1.png'
 # src_path = 'images\\phoneimg_cropped.png'
 #src_path = 'images\\phoneimg_table.png'
 
-remove_path = 'static\\images\\*.png'
+storage_path = 'static\\images\\*.png'
 
 
 def get_image_file(img_file):
@@ -28,10 +28,10 @@ def get_image_file(img_file):
     return pil_object
 
 
-def remove_old_image_files(purge=True):
+def remove_old_image_files(remove_files_path, purge=True):
 
     # Find and remove any current images in folder
-    img_files = glob.glob(remove_path)
+    img_files = glob.glob(remove_files_path)
     # print (img_files)
     if img_files and purge:
         print ("Removing old crops before creating new...")
@@ -104,8 +104,9 @@ def find_horizontal_lines(img_array):
     return yCoords
 
 
-def find_vertical_lines(img_array):
+def find_vertical_lines(img_array, number):
 
+    maxy, maxx = img_array.shape
     isSpace = False
     count = None
     xMean = None
@@ -113,26 +114,51 @@ def find_vertical_lines(img_array):
     vertProj = cv2.reduce(img_array, 0, cv2.REDUCE_AVG)
     for index in np.ndindex(vertProj.shape):
         y, x = index
-        # print(index, vertProj[(y, x)])
+       # print(index, vertProj[(y, x)])
         if isSpace == False:
-            if vertProj[(y, x)] == 0 and vertProj[(y, x - 2)] == 0 and vertProj[(y, x + 2)] == 0:
-                isSpace = True
-                count = 1
-                xMean = x
+            if x + 2 <= maxx:
+                if vertProj[(y, x)] == 0 and vertProj[(y, (x-2))] == 0 and vertProj[(y, (x-3))] == 0 and vertProj[(y, (x+2))] == 0 and vertProj[(y, (x+3))] == 0:
+                    isSpace = True
+                    count = 1
+                    xMean = x
+            else:
+                if vertProj[(y, x)] == 0 and vertProj[(y, (x-2))] == 0:
+                    isSpace = True
+                    count = 1
+                    xMean = x
         else:
-            if vertProj[(y, x)] != 0:
+            if vertProj[(y, x)] != 0 or x == (maxx - 1):
                 isSpace = False
-                # print(xMean / count)
-                xCoords.append(xMean / count)
+                if (xMean / count) > 1:
+                    #print("Image #", number, "VLine Draw @ = ", xMean / count)
+                    xCoords.append((xMean / count) - 2)
             else:
                 xMean += x
                 count += 1
 
     return xCoords
 
+
+def save_vertical_crops(image_list, selected_image):
+
+    if not os.path.exists('static/images/' + str(selected_image) + "/"):
+        os.makedirs('static/images/' + str(selected_image) + "/")
+    else:
+        remove_old_image_files('static/images/' + str(selected_image) + "/*.*", True)
+
+    count = 0
+    for eachImage in image_list:
+        y, x = eachImage.shape
+        if x > 0:
+            #print('each_image = ' + str(count), type(eachImage), eachImage.shape, eachImage.dtype)
+            #cv2.imshow('Row Crops' + str(selected_image), eachImage)
+            cv2.imwrite('static/images/' + str(selected_image) + "/" + str(selected_image) + "-" + str(count) + '.png', eachImage)
+            count += 1
+
+
 if __name__ == '__main__':
 
-    remove_old_image_files(True)
+    remove_old_image_files(storage_path, True)
 
     pil_image = get_image_file(src_path)
 
@@ -184,19 +210,25 @@ if __name__ == '__main__':
         # cv2.line(img_final, (0, ypt), (maxx, ypt), (0, 0, 255))
         previousYpt = ypt
 
-    i = 10  # default starting pic count, makes for easy sorting
+    i = 30  # default starting pic count, makes for easy sorting
+    previousXpt = 1
+    vertical_crops = list()
     for im in cropped_images:
-        vertical_segments = find_vertical_lines(im)
-        vert_img = cv2.cvtColor(im, cv2.COLOR_GRAY2RGB)
-        print('vert_img = ', type(vert_img), vert_img.shape, vert_img.dtype)
         print('Find vertical line segments...')
-        maxy, maxx, dtype = vert_img.shape
+        vertical_segments = find_vertical_lines(im, i)
+        #print('im = ', type(im), im.shape, im.dtype)
+        maxy, maxx = im.shape
         for xpt in vertical_segments:
-            cv2.line(vert_img, (xpt, 0), (xpt, maxy), (0, 255, 0))
+            vertical_crops.append(im[0:maxy, previousXpt:xpt])
+            # cv2.line(vert_img, (xpt, 0), (xpt, maxy), (0, 255, 0))
             # cv2.putText(img_final, str(xpt), (xpt, 30), cv2.FONT_HERSHEY_SIMPLEX, .2, (0, 255, 0))
+            previousXpt = xpt
+            #cv2.imshow('CV2 Cropped' + str(xpt), im[0:maxy, previousXpt:xpt])
+        save_vertical_crops(vertical_crops, i)
+        vertical_crops = list()
         print ('Saving cropped image...' + str(i))
-        cv2.imshow('CV2 Cropped' + str(i), im)
-        cv2.imwrite('static\\images\\' + str(dt.date.today()) + str(i) + '.png', vert_img)
+        # cv2.imshow('CV2 Cropped' + str(i), im)
+        cv2.imwrite('static\\images\\' + str(dt.date.today()) + str(i) + '.png', im)
         i += 1
 
     print('Image processing completed!')

@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b336b13-2294-4ba1-98e4-1f9b099d296a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1210.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1211.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1212.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1213.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1214.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1215.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1216.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1217.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1218.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1219.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1220.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1221.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1222.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1223.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1224.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1311.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1312.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1313.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1314.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1315.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1316.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1317.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1318.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1319.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1321.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1322.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1323.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1324.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_processing.py" afterPath="$PROJECT_DIR$/image_processing.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/env27_rushrecruit$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1484362729367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/env27_rushrecruit$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1484414981372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/env27_rushrecruit$rush_recruit.coverage" NAME="rush_recruit Coverage Results" MODIFIED="1484192177330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -50,8 +51,8 @@
       <file leaf-file-name="image_processing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="189" column="54" lean-forward="false" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="54" />
+            <state relative-caret-position="584">
+              <caret line="215" column="29" lean-forward="false" selection-start-line="215" selection-start-column="29" selection-end-line="215" selection-end-column="29" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -109,8 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,6 +124,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,15 +419,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108208954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110341154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40628386" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31852654" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -501,6 +502,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/426116376/exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6375">
@@ -530,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -561,8 +595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="189" column="54" lean-forward="false" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="54" />
+        <state relative-caret-position="584">
+          <caret line="215" column="29" lean-forward="false" selection-start-line="215" selection-start-column="29" selection-end-line="215" selection-end-column="29" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
