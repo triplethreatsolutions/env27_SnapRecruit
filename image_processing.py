@@ -9,11 +9,11 @@ import glob
 
 HISTO_DEBUG = False
 
-#src_path = 'images\\usjn_mod1.png'
-src_path = 'images\\phoneimg_cropped.png'
+src_path = 'images\\usjn_mod1.png'
+# src_path = 'images\\phoneimg_cropped.png'
 #src_path = 'images\\phoneimg_table.png'
 
-store_path = 'static\\images\\*.png'
+remove_path = 'static\\images\\*.png'
 
 
 def get_image_file(img_file):
@@ -21,7 +21,7 @@ def get_image_file(img_file):
     try:
         print('Getting image for processing...')
         pil_object = Image.open(img_file)
-        print('PIL Object = ', pil_object.size, 'Mode = ', pil_object.mode)
+        # print('PIL Object = ', pil_object.size, 'Mode = ', pil_object.mode)
     except IOError:
         print(' Unable to open image: ', img_file)
 
@@ -31,7 +31,7 @@ def get_image_file(img_file):
 def remove_old_image_files(purge=True):
 
     # Find and remove any current images in folder
-    img_files = glob.glob(store_path)
+    img_files = glob.glob(remove_path)
     # print (img_files)
     if img_files and purge:
         print ("Removing old crops before creating new...")
@@ -45,7 +45,7 @@ def remove_old_image_files(purge=True):
 def invert_image_pixels(img_array, max_bin):
 
     invert_image = empty_like(img_array)
-    print('invert image = ', type(invert_image), invert_image.shape, invert_image.dtype)
+    # print('invert image = ', type(invert_image), invert_image.shape, invert_image.dtype)
     print('Inverting image pixels...')
     for point in np.ndindex(img_array.shape):
         if img_array[point] > (max_bin + 25):
@@ -53,7 +53,7 @@ def invert_image_pixels(img_array, max_bin):
         else:
             invert_image[point] = 0
 
-    cv2.imshow('CV2 Invert Image', invert_image)
+    # cv2.imshow('CV2 Invert Image', invert_image)
 
     return invert_image
 
@@ -63,9 +63,15 @@ def calculate_histogram(img_file):
     print('Calculating histogram...')
     #cv2.imshow('CV2 Histo Img', img_file)
     hist1 = cv2.calcHist([img_file], [0], None, [256], [0, 256])
-    print('hist1 = ', type(hist1), hist1.shape, hist1.dtype)
+    # print('hist1 = ', type(hist1), hist1.shape, hist1.dtype)
     # Finding the largest bin, bin index indicates intensity value
-    print ('Max point = ', np.nanargmax(hist1), 'Max size = ', hist1[np.nanargmax(hist1), 0])
+    # print ('Max point = ', np.nanargmax(hist1), 'Max size = ', hist1[np.nanargmax(hist1), 0])
+
+    if HISTO_DEBUG:
+        plt.plot(hist1)
+        plt.show()
+        plt.plot(hist2)
+        plt.show()
 
     return invert_image_pixels(img_file, np.nanargmax(hist1))
 
@@ -93,14 +99,13 @@ def find_horizontal_lines(img_array):
                 yCoords.append((yMean / count) - 2)
             else:
                 yMean += y
-                count = count + 1
+                count += 1
 
     return yCoords
 
 
 def find_vertical_lines(img_array):
 
-    maxy, maxx = img_array.shape
     isSpace = False
     count = None
     xMean = None
@@ -121,92 +126,80 @@ def find_vertical_lines(img_array):
                 xCoords.append(xMean / count)
             else:
                 xMean += x
-                count = count + 1
+                count += 1
 
     return xCoords
 
 if __name__ == '__main__':
 
-    remove_old_image_files(False)
+    remove_old_image_files(True)
 
     pil_image = get_image_file(src_path)
+
+    # What are the dimensions of the image
+    maxy, maxx, dtype = np.array(pil_image).shape
+    print("Original Image Shape = ", maxy, maxx)
 
     pil_img_sharpen = pil_image.filter(ImageFilter.SHARPEN)
     #print('pil_img_sharpen = ', type(pil_img_sharpen))
 
     img_grey = cv2.cvtColor(np.array(pil_img_sharpen), cv2.COLOR_RGB2GRAY)
-    #cv2.imshow('CV2 Grey', img_grey)
-    #print('img_grey = ', type(img_grey), img_grey.shape, img_grey.dtype)
+    # cv2.imshow('CV2 Grey', img_grey)
+    # print('img_grey = ', type(img_grey), img_grey.shape, img_grey.dtype)
 
     kernel = np.ones((1, 1), np.uint8)
 
     img_dilate = cv2.dilate(img_grey, kernel, iterations=1)
-    #cv2.imshow('CV2 Dilate', img_dilate)
+    # cv2.imshow('CV2 Dilate', img_dilate)
 
     img_erode = cv2.erode(img_dilate, kernel, iterations=1)
-    #cv2.imshow('CV2 Erode', img_erode)
+    # cv2.imshow('CV2 Erode', img_erode)
 
     img_denoise = cv2.fastNlMeansDenoising(img_erode)
-    #cv2.imshow('CV2 Denoise', img_denoise)
+    # cv2.imshow('CV2 Denoise', img_denoise)
 
-    #img_bilateral = cv2.bilateralFilter(img_denoise, 3, 50, 50)
+    # img_bilateral = cv2.bilateralFilter(img_denoise, 3, 50, 50)
 
     # Invert the bits of the image, this turns text white
     img_invert = cv2.bitwise_not(img_erode)
-    print('img_invert = ', type(img_invert), img_invert.shape, img_invert.dtype)
-    cv2.imshow('CV2 Invert', img_invert)
+    # print('img_invert = ', type(img_invert), img_invert.shape, img_invert.dtype)
+    # cv2.imshow('CV2 Invert', img_invert)
 
-    img_threshold = cv2.adaptiveThreshold(img_invert, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
-    #cv2.imshow('CV2 Threshold', img_threshold)
+    img_threshold = cv2.adaptiveThreshold(img_grey, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+    # cv2.imshow('CV2 Threshold', img_threshold)
 
     final_img = calculate_histogram(img_invert)
+    print('final_img = ', type(final_img), final_img.shape, final_img.dtype)
 
-    if HISTO_DEBUG:
-        hist2 = cv2.calcHist([final_img], [0], None, [256], [0, 256])
-        plt.plot(hist1)
-        plt.show()
-        plt.plot(hist2)
-        plt.show()
-    else:
-        print('Find horizontal line segments...')
-        horizontal_segments = find_horizontal_lines(final_img)
+    print('Find horizontal line segments...')
+    horizontal_segments = find_horizontal_lines(final_img)
 
+    previousYpt = 0
+    cropped_images = list()
+    print('Cropping images by row... ')
+    for ypt in horizontal_segments:
+        # its img[y: y + h, x: x + w], upper left and lower right X,Y coords
+        cropped_images.append(final_img[previousYpt:ypt, 0:maxx])
+        # draw the horizontal lines on the image
+        # cv2.line(img_final, (0, ypt), (maxx, ypt), (0, 0, 255))
+        previousYpt = ypt
+
+    i = 10  # default starting pic count, makes for easy sorting
+    for im in cropped_images:
+        vertical_segments = find_vertical_lines(im)
+        vert_img = cv2.cvtColor(im, cv2.COLOR_GRAY2RGB)
+        print('vert_img = ', type(vert_img), vert_img.shape, vert_img.dtype)
         print('Find vertical line segments...')
-        vertical_segments = find_vertical_lines(final_img)
+        maxy, maxx, dtype = vert_img.shape
+        for xpt in vertical_segments:
+            cv2.line(vert_img, (xpt, 0), (xpt, maxy), (0, 255, 0))
+            # cv2.putText(img_final, str(xpt), (xpt, 30), cv2.FONT_HERSHEY_SIMPLEX, .2, (0, 255, 0))
+        print ('Saving cropped image...' + str(i))
+        cv2.imshow('CV2 Cropped' + str(i), im)
+        cv2.imwrite('static\\images\\' + str(dt.date.today()) + str(i) + '.png', vert_img)
+        i += 1
 
-        # What are the dimensions of the image
-        maxy, maxx = final_img.shape
-        print("Final Image = ", maxy, maxx)
-
-        previousYpt = 0
-        cropped_images = list()
-        print('Cropping images by row... ')
-        for ypt in horizontal_segments:
-            # its img[y: y + h, x: x + w], upper left and lower right X,Y coords
-            cropped_images.append(img_denoise[previousYpt:ypt, 0:maxx])
-            # draw the horizontal lines on the image
-            #cv2.line(img_final, (0, ypt), (maxx, ypt), (0, 0, 255))
-            previousYpt = ypt
-
-        i = 10  # default starting pic count, makes for easy sorting
-        for im in cropped_images:
-            #img_final = cv2.cvtColor(im, cv2.COLOR_GRAY2BGR)
-            #print('img_final = ', type(im), im.shape, im.dtype)
-            for xpt in vertical_segments:
-                cv2.line(im, (xpt, 0), (xpt, maxy), (0, 255, 0))
-                #cv2.putText(img_final, str(xpt), (xpt, 30), cv2.FONT_HERSHEY_SIMPLEX, .2, (0, 255, 0))
-            print ('Saving cropped image...')
-            #cv2.imshow('CV2 Cropped' + str(i), im)
-            cv2.imwrite('static\\images\\' + str(dt.date.today()) + str(i) + '.png', im)
-            i = i + 1
-
-        print('Image processing completed!')
-
-        #cv2.imshow('CV2 Grey', img_grey)
-        #cv2.imshow('CV2 Denoise', img_denoise)
-        #cv2.imshow('CV2 Threshold', threshold)
-        #cv2.imshow('CV2 New', new_img)
-        #cv2.imshow('CV2 Final', img_final)
+    print('Image processing completed!')
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
