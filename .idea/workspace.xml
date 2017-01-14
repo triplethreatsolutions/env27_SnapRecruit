@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b336b13-2294-4ba1-98e4-1f9b099d296a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1311.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1312.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1313.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1314.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1315.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1316.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1317.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1318.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1319.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1320.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1321.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1322.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1323.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1324.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_processing.py" afterPath="$PROJECT_DIR$/image_processing.py" />
-    </list>
+    <list default="true" id="0b336b13-2294-4ba1-98e4-1f9b099d296a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
