@@ -1,7 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b336b13-2294-4ba1-98e4-1f9b099d296a" name="Default" comment="" />
+    <list default="true" id="0b336b13-2294-4ba1-98e4-1f9b099d296a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1431.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1432.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1433.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1434.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1435.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1436.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1437.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1438.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1439.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1440.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1441.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1442.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1443.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/2017-01-1444.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/30/30-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/31/31-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/32/32-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/33/33-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/34/34-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/35/35-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/36/36-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/37/37-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/38/38-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/39/39-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/40/40-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/41/41-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/42/42-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/43/43-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/44/44-9.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snap_results.csv" afterPath="$PROJECT_DIR$/snap_results.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_processing.py" afterPath="$PROJECT_DIR$/image_processing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rush_recruit.py" afterPath="$PROJECT_DIR$/rush_recruit.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,8 +239,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/env27_rushrecruit$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1484414981372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/env27_rushrecruit$rush_recruit.coverage" NAME="rush_recruit Coverage Results" MODIFIED="1484192177330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/env27_rushrecruit$image_processing.coverage" NAME="image_processing Coverage Results" MODIFIED="1485032406846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/env27_rushrecruit$rush_recruit.coverage" NAME="rush_recruit Coverage Results" MODIFIED="1485031974538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -29,12 +258,12 @@
     <favorites_list name="env27_rushrecruit" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="image_processing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/image_processing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="215" column="29" lean-forward="false" selection-start-line="215" selection-start-column="29" selection-end-line="215" selection-end-column="29" />
+            <state relative-caret-position="3838">
+              <caret line="258" column="60" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="60" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -45,8 +274,8 @@
       <file leaf-file-name="rush_recruit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rush_recruit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            <state relative-caret-position="425">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,6 +321,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,7 +337,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,15 +630,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110341154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40628386" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31852654" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3109426" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -420,7 +650,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997987" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -430,15 +659,15 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40628386" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20260021" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33586133" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -448,6 +677,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -456,6 +703,78 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_processing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -545,25 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/env/env27_rushrecruit/Lib/site-packages/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/426116376/exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
           <caret line="375" column="6" lean-forward="false" selection-start-line="375" selection-start-column="6" selection-end-line="375" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,10 +879,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/env/env27_rushrecruit/Lib/site-packages/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rush_recruit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/image_processing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="215" column="29" lean-forward="false" selection-start-line="215" selection-start-column="29" selection-end-line="215" selection-end-column="29" />
+        <state relative-caret-position="3838">
+          <caret line="258" column="60" lean-forward="false" selection-start-line="258" selection-start-column="57" selection-end-line="258" selection-end-column="60" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

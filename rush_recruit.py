@@ -24,37 +24,45 @@ print("Will use lang '%s'" % (lang))
 # initialize recruit info list
 recruit_info = list()
 
-img_files = glob.glob('static\\images\*.png')
-#print (img_files)
+folders = glob.glob('static/images/*/')
+#print (folders)
+
 print(' ')
 
-for im in img_files:
-    try:
-        print('Getting image to extract data: ' + str(im))
-        pil_image = Image.open(im)
-    except IOError:
-        print(' Unable to open image: ' + str(im))
+output = list()
+for folder in folders:
+    #print (folder)
+    img_files = glob.glob(folder+'/*.png')
+    #print (img_files)
 
-    print('Running tesseract OCR...')
-    row_info = tool.image_to_string(
-        pil_image,
-        lang=lang,
-        builder=pyocr.builders.TextBuilder()
-    )
-    row_data = row_info.encode('utf-8', 'replace')
-    output = row_data.split()
-    # print (output)
+    for im in img_files:
+        try:
+            print('Getting image to extract data: ' + str(im))
+            pil_image = Image.open(im)
+        except IOError:
+            print(' Unable to open image: ' + str(im))
+
+        print('Running tesseract OCR...')
+        row_info = tool.image_to_string(
+            pil_image,
+            lang=lang,
+            builder=pyocr.builders.TextBuilder()
+        )
+        row_data = row_info.encode('utf-8', 'replace')
+        output.append(row_data)
+        print (output)
 
     # Load all each individual file data into list
     recruit_info.append(output)
+    output = list()
     print(' ')
 
-# Open a file and write csv
-print('Writing data to CSV file...')
-with open('snap_results.csv', 'wb') as csvfile:
-    writer = csv.writer(csvfile, dialect='excel')
-    for item in recruit_info:
-        writer.writerow(item)
+    # Open a file and write csv
+    print('Writing data to CSV file...')
+    with open('snap_results.csv', 'wb') as csvfile:
+        writer = csv.writer(csvfile, dialect='excel')
+        for item in recruit_info:
+            writer.writerow(item)
 
 print('Image data extraction completed!')
 
